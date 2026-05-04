@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — LongDL Chrome Extension</title>
+    <meta name="description" content="Privacy policy for the LongDL Chrome extension (DeepL Pro Unlimited – Longer Translations)." />
+    <style>
+      :root {
+        --text: #1a1a1a;
+        --muted: #555;
+        --border: #e2e2e2;
+        --bg: #ffffff;
+        --accent: #0f62fe;
+      }
+      * { box-sizing: border-box; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.6;
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 24px 96px;
+      }
+      h1 { font-size: 30px; margin: 0 0 8px; }
+      h2 { font-size: 20px; margin: 36px 0 12px; }
+      h3 { font-size: 16px; margin: 24px 0 8px; }
+      p, li { font-size: 15.5px; }
+      ul { padding-left: 20px; }
+      li { margin: 6px 0; }
+      .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+      .callout {
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 16px 20px;
+        background: #fafafa;
+        margin: 20px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 12px 0 24px;
+        font-size: 14.5px;
+      }
+      th, td {
+        border: 1px solid var(--border);
+        padding: 8px 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+      th { background: #f5f5f5; font-weight: 600; }
+      a { color: var(--accent); }
+      code {
+        background: #f3f3f3;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 13px;
+      }
+      footer {
+        margin-top: 64px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        font-size: 13px;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      LongDL — Chrome Extension "DeepL Pro Unlimited – Longer Translations"<br />
+      Last updated: 4 May 2026
+    </p>
+
+    <div class="callout">
+      <strong>Short version:</strong> The extension does not collect, store, or
+      transmit any text you translate, your name, your email address, your IP
+      address, or any browsing history. If you opt in, an anonymous random
+      identifier and basic feature-usage events are sent to PostHog (EU servers)
+      so we can see which features are used. You can opt out at any time in the
+      extension's settings.
+    </div>
+
+    <h2>1. Who is responsible</h2>
+    <p>
+      This extension is provided by <strong>LongDL</strong> (the "Provider"),
+      operating from Switzerland. For any privacy-related questions or
+      requests, contact:
+    </p>
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:business.promptin@gmail.com">business.promptin@gmail.com</a>
+    </p>
+    <p>
+      LongDL is not affiliated with, endorsed by, or sponsored by DeepL SE.
+      "DeepL" is a trademark of DeepL SE.
+    </p>
+
+    <h2>2. What the extension does</h2>
+    <p>
+      The extension splits long text submitted to deepl.com into smaller chunks
+      and submits them sequentially through the DeepL web interface, allowing
+      translation of texts that exceed DeepL's free-tier character limit. All
+      translation work happens on deepl.com itself; the extension automates
+      interactions with that page.
+    </p>
+
+    <h2>3. Data the extension processes locally</h2>
+    <p>
+      The extension stores the following data <strong>only on your device</strong>
+      using Chrome's local storage. None of it is transmitted to the Provider or
+      any third party:
+    </p>
+    <ul>
+      <li>Translation history, if you choose to keep it (managed via the History tab)</li>
+      <li>Documents you upload for translation (processed locally and discarded after the translation completes)</li>
+      <li>Loop and document-translation checkpoints, so a translation can resume after interruption</li>
+      <li>Your settings and preferences</li>
+    </ul>
+    <p>
+      You can clear all locally stored data at any time by removing the
+      extension from Chrome.
+    </p>
+
+    <h2>4. Optional anonymous analytics</h2>
+    <p>
+      The extension can send anonymous usage data to help the Provider
+      understand which features are useful and which are not.
+      <strong>Analytics are off by default.</strong> When you first install the
+      extension, a dialog asks for your consent. You can change your choice at
+      any time in the extension's settings.
+    </p>
+
+    <h3>4.1 What is collected (only with your consent)</h3>
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Examples</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Feature events</td>
+          <td>
+            Popup opened, tab switched, translation started/completed/failed,
+            document upload, copy-to-clipboard, magic-fix used, swap used,
+            settings opened.
+          </td>
+        </tr>
+        <tr>
+          <td>Translation metadata</td>
+          <td>
+            Length category of the input ("0–500", "500–2k", "2k–5k", "5k–10k",
+            "10k–25k", "25k+"), number of chunks, duration in milliseconds,
+            error type if applicable.
+          </td>
+        </tr>
+        <tr>
+          <td>Technical context</td>
+          <td>
+            Extension version, browser language (e.g. "de-CH"), an anonymous
+            random identifier (UUID) generated on first opt-in.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>4.2 What is never collected</h3>
+    <ul>
+      <li>The text you translate (input or output)</li>
+      <li>The contents of any document you upload</li>
+      <li>Your name, email address, or any account information</li>
+      <li>Your IP address (IP geolocation is disabled in PostHog)</li>
+      <li>Your browsing history or any data from sites other than deepl.com that the extension interacts with</li>
+      <li>Your DeepL account credentials or session cookies</li>
+    </ul>
+
+    <h3>4.3 Where the data is processed</h3>
+    <p>
+      Anonymous analytics events are processed by
+      <strong>PostHog</strong>, a product analytics service operated by
+      PostHog, Inc. The Provider uses PostHog's
+      <strong>EU Cloud</strong> instance, which stores data on servers located
+      in the European Union (Frankfurt, Germany). PostHog acts as a data
+      processor on behalf of the Provider. PostHog's privacy policy is available
+      at <a href="https://posthog.com/privacy" target="_blank" rel="noopener">https://posthog.com/privacy</a>.
+    </p>
+
+    <h3>4.4 Legal basis</h3>
+    <p>
+      Processing of analytics data is based on your explicit consent
+      (Art. 6(1)(a) GDPR; Art. 31(1) Swiss FADP). You can withdraw your consent
+      at any time, with effect for the future, by toggling the analytics switch
+      in the extension's settings.
+    </p>
+
+    <h3>4.5 Retention</h3>
+    <p>
+      Analytics events are retained by PostHog for up to 12 months, after which
+      they are automatically deleted. The anonymous identifier is reset if you
+      uninstall the extension or revoke consent.
+    </p>
+
+    <h2>5. Your rights</h2>
+    <p>
+      Under the GDPR and the Swiss FADP, you have the right to:
+    </p>
+    <ul>
+      <li>Withdraw your consent for analytics at any time, without giving reasons (toggle in extension settings)</li>
+      <li>Request information about whether analytics data associated with your anonymous identifier exists, and request its deletion</li>
+      <li>Lodge a complaint with a supervisory authority — for users in Switzerland, the
+        <a href="https://www.edoeb.admin.ch/" target="_blank" rel="noopener">Federal Data Protection and Information Commissioner (FDPIC)</a>;
+        for EU users, your national data protection authority</li>
+    </ul>
+    <p>
+      Because the analytics identifier is randomly generated and not linked to
+      any account, the Provider cannot connect events to a specific person
+      without you sharing your identifier. To exercise rights related to
+      specific data, please include your anonymous identifier (visible in the
+      extension's settings page) in your request.
+    </p>
+
+    <h2>6. Network requests made by the extension</h2>
+    <p>
+      The extension makes network requests only to the following destinations:
+    </p>
+    <ul>
+      <li><code>deepl.com</code> — to perform translations (this is the core function)</li>
+      <li><code>eu.i.posthog.com</code> — only if you have opted in to analytics, and only for sending anonymous usage events</li>
+    </ul>
+
+    <h2>7. Children</h2>
+    <p>
+      The extension is not directed at children under 13. The Provider does not
+      knowingly collect data from children.
+    </p>
+
+    <h2>8. Changes to this policy</h2>
+    <p>
+      The Provider may update this policy from time to time, for example to
+      reflect changes to features or legal requirements. Material changes will
+      be communicated through the extension itself (e.g. a new consent prompt)
+      or in the extension's release notes. The "Last updated" date at the top of
+      this page indicates when the policy was last revised.
+    </p>
+
+    <h2>9. Contact</h2>
+    <p>
+      For any questions about this policy or your data, contact:
+      <a href="mailto:business.promptin@gmail.com">business.promptin@gmail.com</a>
+    </p>
+
+    <footer>
+      © LongDL · This policy is provided in English. The English version is
+      authoritative.
+    </footer>
+  </body>
+</html>
